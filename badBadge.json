@@ -1,0 +1,72 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiablePresentation"
+  ],
+  "verifiableCredential": [
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://purl.imsglobal.org/spec/ob/v3p0/context-3.0.3.json",
+        "https://purl.imsglobal.org/spec/ob/v3p0/extensions.json",
+        "https://w3id.org/security/suites/ed25519-2020/v1"
+      ],
+      "id": "urn:uuid:51fc7672-2974-4b1d-b061-ef4b7ee0b905",
+      "type": [
+        "VerifiableCredential",
+        "OpenBadgeCredential"
+      ],
+      "credentialSubject": {
+        "type": [
+          "AchievementSubject"
+        ],
+        "activityStartDate": "2025-06-26T00:00:00Z",
+        "activityEndDate": "2025-06-27T00:00:00Z",
+        "identifier": [
+          {
+            "type": "IdentityObject",
+            "identityHash": "Kerri Lemoie",
+            "identityType": "name",
+            "hashed": false,
+            "salt": "not-used"
+          }
+        ],
+        "achievement": {
+          "id": "urn:uuid:BFD1E03B-26C2-4151-82C6-12CC19982BBC",
+          "type": [
+            "Achievement"
+          ],
+          "image": {
+            "id": "https://digitalcredentials.github.io/badge-assets/DCC_Delft_Summit_Attendee.png",
+            "type": "Image"
+          },
+          "achievementType": "Badge",
+          "criteria": {
+            "id": "urn:uuid:C0571026-DDEB-4A7E-813D-8445663C7A35",
+            "narrative": "Kerri Lemoie attended the Digital Credentials Summit on June 26, 2025 in Delft, Netherlands. Kerri Lemoie contributed to workshops and discussions around global approaches to implementing standards-based, portable, Verifiable Credentials in higher education."
+          },
+          "description": "The DCC Summit brought together Consortium member institutions and invited guests. Attendees celebrated the DCC’s achievements and engaged in activities and conversations that will inform DCC strategy going forward.",
+          "name": "Attendee Badge: 2025 Digital Credentials Consortium Summit"
+        },
+        "id": "did:key:z6MknaZXEdnzMU1pxihw5pWGyPZBghYdabTzvUZRsiyS6x6K"
+      },
+      "validFrom": "2025-06-26T15:00:00Z",
+      "issuer": {
+        "id": "did:key:z6MkjYs6AejWBYizH9gQhCJVN7knqZemnbbJWXYWm8H4S5i3",
+        "type": [
+          "Profile"
+        ],
+        "name": "The Digital Credentials Consortium"
+      },
+      "proof": {
+        "type": "Ed25519Signature2020",
+        "created": "2025-11-21T21:52:14Z",
+        "verificationMethod": "did:key:z6MkjYs6AejWBYizH9gQhCJVN7knqZemnbbJWXYWm8H4S5i3#z6MkjYs6AejWBYizH9gQhCJVN7knqZemnbbJWXYWm8H4S5i3",
+        "proofPurpose": "assertionMethod",
+        "proofValue": "z3PKq8PbqoDpKVDvFAVQptb3U5otsiHkBhdsRqPYNrEMkviJQhqFKcq2baWg3CyMxqGygAjKG3jktKboZCoteDJaZ"
+      }
+    }
+  ]
+}
